@@ -1,0 +1,61 @@
+{% load static %}<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/x-icon" href="{% static 'images/Logo.ico' %}">
+
+		<!-- font-awesome -->
+		<link rel="stylesheet" href="{% static 'css/font-awesomemin.css' %}">
+		<!-- google font -->
+		<link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700,800' rel='stylesheet' type='text/css'>
+		<!-- custom -->
+		<link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+        <title>{{title}}</title>
+	</head>
+	<body>
+        <header id="Header_Desktop"> <!--Desktop-->
+            <div id="Header_Title_Desktop">
+                <h1>{{page_title}}</h1>
+            </div>
+        </header>
+        <main id="Desktop_main">
+            <section class="portfolio-thumb">
+                <img src="{% static 'images/portfolio-img21.jpg'%}" class="img-responsive" alt="portfolio img">
+                    <div class="portfolio-overlay">
+                        <h4>Personagem Daniel</h4>
+                        <h5>04/09/2016</h5>
+                    </div>
+            </section>
+            <section class="portfolio-thumb">
+                <img src="{% static 'images/portfolio-img17.jpg'%}" class="img-responsive" alt="portfolio img">
+						<div class="portfolio-overlay">
+							<h4>Personagem Hayato-1</h4>
+                            <h5>18/09/2016</h5>
+						</div>
+            </section>
+            <section class="portfolio-thumb">
+                <img src="{% static 'images/portfolio-img18.jpg'%}" class="img-responsive" alt="portfolio img">
+                    <div class="portfolio-overlay">
+                        <h4>Personagem Hayato-2</h4>
+                        <h5>03/09/2016</h5>
+                    </div>
+            </section>
+            <section class="portfolio-thumb">
+                <img src="{% static 'images/portfolio-img11.png'%}" class="img-responsive" alt="portfolio img">
+                    <div class="portfolio-overlay">
+                        <h4>Cenário</h4>
+                        <h5>16/10/2016</h5>
+                    </div>
+            </section>
+        </main>
+        <footer>
+            <section class="container">
+                <p>{{copy}}</p>
+            </section>
+        </footer>
+
+    </body>
+</html>

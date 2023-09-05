@@ -1,0 +1,67 @@
+{% load static %}<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/x-icon" href="{% static 'images/Logo.ico' %}">
+
+		<!-- font-awesome -->
+		<link rel="stylesheet" href="{% static 'css/font-awesomemin.css' %}">
+		<!-- google font -->
+		<link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700,800' rel='stylesheet' type='text/css'>
+		<!-- custom -->
+		<link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+        <title>{{title}}</title>
+	</head>
+	<body>
+        <header id="Header_Desktop"> <!--Desktop-->
+            <div id="Header_Title_Desktop">
+                <h1>{{page_title}}</h1>
+            </div>
+            {% comment %} <a href="{% url 'app:home' %}"><p id="Desktop_name">{ Daniel Mendes }</p></a> {% endcomment %}
+        </header>
+        {% comment %} <header id="Header_Mobile"> <!--Mobile-->
+            <div id="Header_Title_Mobile">
+                <h1> Design Gráfico - Vetores</h1>
+            </div>
+        </header> {% endcomment %}
+        <main id="Desktop_main">
+            <section class="portfolio-thumb">
+                <img src="{% static 'images/portfolio-img19.png'%}" class="img-responsive" alt="portfolio img">
+                    <div class="portfolio-overlay">
+                        <h4>Estampa em caneca</h4>
+                        <h5>02/04/2020</h5>
+                    </div>
+            </section>
+            <section class="portfolio-thumb">
+                <img src="{% static 'images/portfolio-img14.png'%}" class="img-responsive" alt="portfolio img">
+                    <div class="portfolio-overlay">
+                        <h4>Logo BIOS</h4>
+                        <h5>21/08/2022</h5>
+                    </div>
+            </section>
+            <section class="portfolio-thumb">
+                <img src="{% static 'images/portfolio-img13.png'%}" class="img-responsive" alt="portfolio img">
+						<div class="portfolio-overlay">
+							<h4>Logo CMOS</h4>
+                            <h5>21/08/2022</h5>
+						</div>
+            </section>
+            <section class="portfolio-thumb">
+                <img src="{% static 'images/portfolio-img16.png'%}" class="img-responsive" alt="portfolio img">
+                    <div class="portfolio-overlay">
+                        <h4>Jason Shib</h4>
+                        <h5>06/05/2017</h5>
+                    </div>
+            </section>
+        </main>
+        <footer>
+            <section class="container">
+                <p>{{copy}}</p>
+            </section>
+        </footer>
+
+    </body>
+</html>

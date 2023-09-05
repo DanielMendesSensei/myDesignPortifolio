@@ -1,0 +1,61 @@
+{% load static %}<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/x-icon" href="{% static 'images/Logo.ico' %}">
+
+		<!-- font-awesome -->
+		<link rel="stylesheet" href="{% static 'css/font-awesomemin.css' %}">
+		<!-- google font -->
+		<link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700,800' rel='stylesheet' type='text/css'>
+		<!-- custom -->
+		<link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+        <title>{{title}}</title>
+	</head>
+	<body>
+        <header id="Header_Desktop"> <!--Desktop-->
+            <div id="Header_Title_Desktop">
+                <h1>{{page_title}}</h1>
+            </div>
+        </header>
+        <main id="Desktop_main">
+            <section class="portfolio-thumb">
+                <img src="{% static 'images/portfolio-img2.png'%}" class="img-responsive" alt="portfolio img">
+                    <div class="portfolio-overlay">
+                        <h4>Logomarca Desenvolvedora</h4>
+                        <h5>26/11/2020</h5>
+                    </div>
+            </section>
+            <section class="portfolio-thumb">
+                <img src="{% static 'images/portfolio-img5.png'%}" class="img-responsive" alt="portfolio img">
+                    <div class="portfolio-overlay">
+                        <h4>Logo/Banner YouTube</h4>
+                        <h5>01/03/2021</h5>
+                    </div>
+            </section>
+            <section class="portfolio-thumb">
+                <img src="{% static 'images/portfolio-img20.png'%}" class="img-responsive" alt="portfolio img">
+						<div class="portfolio-overlay">
+							<h4>Logo Empresarial</h4>
+                            <h5>24/01/2021</h5>
+						</div>
+            </section>
+            <section class="portfolio-thumb">
+                <img src="{% static 'images/portfolio-img6.jpg'%}" class="img-responsive" alt="portfolio img">
+                    <div class="portfolio-overlay">
+                        <h4>Logomarca Marcenaria</h4>
+                        <h5>18/08/2023</h5>
+                    </div>
+            </section>
+        </main>
+        <footer>
+            <section class="container">
+                <p>{{copy}}</p>
+            </section>
+        </footer>
+
+    </body>
+</html>

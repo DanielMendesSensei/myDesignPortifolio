@@ -1,0 +1,89 @@
+{% load static %}<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/x-icon" href="{% static 'images/Logo.ico' %}">
+
+		<!-- font-awesome -->
+		<link rel="stylesheet" href="{% static 'css/font-awesomemin.css' %}">
+		<!-- google font -->
+		<link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700,800' rel='stylesheet' type='text/css'>
+		<!-- custom -->
+		<link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+        <title>{{title}}</title>
+	</head>
+	<body>
+        <header id="Header_Desktop"> <!--Desktop-->
+            <div id="Header_Title_Desktop">
+                <h1>{{page_title}}</h1>
+            </div>
+        </header>
+        <main id="Desktop_main">
+            <section class="portfolio-thumb">
+                <img src="{% static 'images/portfolio-img3.png'%}" class="img-responsive" alt="portfolio img">
+                    <div class="portfolio-overlay">
+                        <h4>Modelagem 3D de Móveis</h4>
+                        <h5>28/08/2023</h5>
+                    </div>
+            </section>
+            <section class="portfolio-thumb">
+                <img src="{% static 'images/portfolio-img1.png'%}" class="img-responsive" alt="portfolio img">
+						<div class="portfolio-overlay">
+							<h4>Cartão de Visista - Frente</h4>
+                            <h5>20/03/2022</h5>
+						</div>
+            </section>
+            <section class="portfolio-thumb">
+                <img src="{% static 'images/portfolio-img22.png'%}" class="img-responsive" alt="portfolio img">
+						<div class="portfolio-overlay">
+							<h4>Cartão de Visista - Trás</h4>
+                            <h5>20/03/2022</h5>
+						</div>
+            </section>
+            <section class="portfolio-thumb">
+                <img src="{% static 'images/portfolio-img7.png'%}" class="img-responsive" alt="portfolio img">
+						<div class="portfolio-overlay">
+							<h4>Crachá de Funcionários</h4>
+                            <h5>15/04/2021</h5>
+						</div>
+            </section>
+            <section class="portfolio-thumb">
+                <img src="{% static 'images/portfolio-img8.png'%}" class="img-responsive" alt="portfolio img">
+						<div class="portfolio-overlay">
+							<h4>Folder Emrpesarial</h4>
+                            <h5>20/03/2022</h5>
+						</div>
+            </section>
+            <section class="portfolio-thumb">
+                <img src="{% static 'images/portfolio-img9.png'%}" class="img-responsive" alt="portfolio img">
+						<div class="portfolio-overlay">
+							<h4>Poster AESTHETIC</h4>
+                            <h5>10/02/2021</h5>
+						</div>
+            </section>
+            <section class="portfolio-thumb">
+                <img src="{% static 'images/portfolio-img15.png'%}" class="img-responsive" alt="portfolio img">
+						<div class="portfolio-overlay">
+							<h4>Capa CD</h4>
+                            <h5>08/05/2019</h5>
+						</div>
+            </section>
+            <section class="portfolio-thumb">
+                <img src="{% static 'images/portfolio-img19.png'%}" class="img-responsive" alt="portfolio img">
+						<div class="portfolio-overlay">
+							<h4>Estampa de caneca</h4>
+                            <h5>14/08/2018</h5>
+						</div>
+            </section>
+        </main>
+        <footer>
+            <section class="container">
+                <p>{{copy}}</p>
+            </section>
+        </footer>
+
+    </body>
+</html>

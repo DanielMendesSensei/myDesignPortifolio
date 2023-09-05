@@ -1,0 +1,56 @@
+@charset "utf-8";
+
+*
+{
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+	text-decoration: none;
+	/*box-sizing: border-box;*/
+	outline: none;
+	scroll-behavior: smooth;
+}
+:root
+{
+	--bg-color: hsla(56, 9%, 90%, 0.8);
+	--second-bg-color: hsla(59, 9%, 67%, 1.0);
+	--third-bg-color: linear-gradient(0deg, #C0BB9B, #ABA997 74%);
+	--text-color: hsla(69, 16%, 40%, 1.0);
+	--second-text-color: hsla(59, 2%, 89%, 0.8);
+	--third-text-color: hsla(72, 16%, 24%, 1.0);
+	--fort-text-color: hsla(59, 4%, 90%, 1.0);
+	--fifth-text-color: hsla(217, 0%, 100%, 1.0);
+	--text-family: MyEthnocentric;
+	--text-size: 15px;
+}
+
+html
+{
+	/*font-size: 62.5%;*/
+	overflow-x: hidden;
+}
+
+body
+{
+	width: 100%;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+body::-webkit-scrollbar
+{
+	width: 12px;
+}
+body::-webkit-scrollbar-thumb
+{
+  background-color: hsla(69, 16%, 40%, 1.0);
+  border-radius: 20px;
+}
+ul, ol, li 
+{
+    list-style-type: none;
+}
+a
+{
+	text-decoration: none;
+}

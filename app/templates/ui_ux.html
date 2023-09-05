@@ -1,0 +1,47 @@
+{% load static %}<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/x-icon" href="{% static 'images/Logo.ico' %}">
+
+		<!-- font-awesome -->
+		<link rel="stylesheet" href="{% static 'css/font-awesomemin.css' %}">
+		<!-- google font -->
+		<link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700,800' rel='stylesheet' type='text/css'>
+		<!-- custom -->
+		<link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+        <title>{{title}}</title>
+	</head>
+	<body>
+        <header id="Header_Desktop"> <!--Desktop-->
+            <div id="Header_Title_Desktop">
+                <h1>{{page_title}}</h1>
+            </div>
+        </header>
+        <main id="Desktop_main_2">
+            <section class="portfolio-thumb_2">
+                <img src="{% static 'images/portfolio-img4.png'%}" class="img-responsive" alt="portfolio img">
+                    <div class="portfolio-overlay">
+                        <h4>YouTube Downloader</h4>
+                        <h5>23/11/2020</h5>
+                    </div>
+            </section>
+            <section class="portfolio-thumb_2">
+                <img src="{% static 'images/portfolio-img10.png'%}" class="img-responsive" alt="portfolio img">
+						<div class="portfolio-overlay">
+							<h4>Gerenciador Empresarial - Python</h4>
+                            <h5>16/02/2021</h5>
+						</div>
+            </section>
+        </main>
+        <footer>
+            <section class="container">
+                <p>{{copy}}</p>
+            </section>
+        </footer>
+
+    </body>
+</html>
